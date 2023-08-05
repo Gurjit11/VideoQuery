@@ -177,7 +177,7 @@ function App() {
             >
               {clearing ? "Clearing..." : "Clear DB"}
             </button> : null}
-            {clear ? <span className='text-blue-500 ml-3'>( {clear} )</span> : <span className='text-blue-500 ml-3'>( Please Clear DB after use )</span>}
+            {transcribe ? clear ? <span className='text-blue-500 ml-3'>( {clear} )</span> : <span className='text-blue-500 ml-3'>( Please Clear DB after use )</span> : null}
           </div>
           <Footer />
         </div>
