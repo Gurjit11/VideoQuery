@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Footer from './components/Footer';
+import Confetti from './components/Confetti';
 
 function App() {
   const [url, setUrl] = useState("")
@@ -178,6 +179,7 @@ function App() {
               {clearing ? "Clearing..." : "Clear DB"}
             </button> : null}
             {transcribe ? clear ? <span className='text-blue-500 ml-3'>( {clear} )</span> : <span className='text-blue-500 ml-3'>( Please Clear DB after use )</span> : null}
+            {clear ? <Confetti /> : null}
           </div>
           <Footer />
         </div>
